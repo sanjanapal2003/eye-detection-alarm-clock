@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alarm</title>
+   <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+
+<h1>⏰ Alarm Page</h1>
+
+<button id="addAlarmBtn">➕ Add Alarm</button>
+<button id="stopAlarm" style="display:none;">Stop</button>
+<div id="alarmList"></div>
+
+<audio id="alarmSound" src="/sound/alarm.mp3"></audio>
+
+
+
+<div id="cameraContainer" style="display:none;">
+
+    <video
+        id="video"
+        width="640"
+        height="480"
+        autoplay
+        playsinline>
+    </video>
+
+    <canvas
+        id="canvas"
+        width="640"
+        height="480"
+        style="position:absolute;left:0;top:0;">
+    </canvas>
+
+</div>
+
+
+<script type="module" src="/js/alarm.js"></script>
+</body>
+</html>

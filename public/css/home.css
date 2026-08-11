@@ -1,0 +1,126 @@
+body{
+    
+    background-color: pink;
+    text-align: center;
+    font-family: Arial;
+    margin-top: 100px;
+
+}
+
+ #intro
+{ 
+    /* display:none; 
+    position: fixed; */
+    display: none;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+}
+  
+#app {
+    /* height: 100vh;
+    display: none;
+    position: relative; */
+    display: none;
+    height: 100vh;
+    display: flex;
+    /* Using Flexbox on the app container to center everything inside it */
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    
+     /* position: relative; */
+}
+
+/* Top Bar */ 
+#topMenu {
+    
+    align-items: center;;
+    justify-content: center;
+    gap: 20px;
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    display: none;
+    /* transform: translate(-50%, -50%); */
+    display: flex;
+    gap: 20px;
+} 
+
+/* Buttons */
+.menuBtn {
+    padding: 8px 18px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background: white;
+    cursor: pointer;
+}
+
+.menuBtn:hover {
+    background: rgb(37, 14, 90);
+    color: white;
+    transform:scale(1.05);
+}
+
+/* Center Content */
+.content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+} */
+
+
+.mainImg {
+    width: 200px;
+}
+#alarmSection, #timerSection {
+    /* position: absolute; */
+    /* top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+     display: none;
+    text-align: center;
+}
+
+
+
+
+#introClock {
+    display: inline-block;
+    width: 120px;
+    margin-top: 20px;
+    animation: wave 1s infinite ease-in-out;
+
+}
+
+@keyframes wave {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(10deg); }
+    50%  { transform: rotate(-10deg); }
+    75%  { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+
+
+#startScreen{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:black;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    z-index: 9999;
+}
+

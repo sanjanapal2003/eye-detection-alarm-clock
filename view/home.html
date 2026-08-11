@@ -1,0 +1,85 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindBell</title>
+
+   
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <!-- <h1>Good Morning  ⏰ </h1>
+    <h2>I am MindBell</h2>
+    <p>I Keep You Productive</p> -->
+
+
+<div id="startScreen">
+    <h1>Tap to Start MindBell 🌙</h1>
+</div>
+
+
+
+<!--intro screen  -->
+<div id="intro">
+   <h1 id="introText">...</h1>
+
+
+
+    <img id="introClock"
+         src="images/images.jpg"
+         alt="wave"> 
+</div>        
+
+
+
+ 
+<div id="app">
+
+   
+    <div id="topMenu" style="display: none;">
+        <!-- <button id="menuBtn">⏰ Alarm</button>
+        <button id="menuBtn">⏳ Timer</button> -->
+
+
+
+        <a href="/alarm">
+    <button class="menuBtn">⏰ Alarm</button>
+</a>
+
+<a href="/timer">
+    <button class="menuBtn">⏳ Timer</button>
+</a>
+
+
+    <!-- <button id="alarmBtn" class="menuBtn">⏰ Alarm</button>
+    <button id="timerBtn" class="menuBtn">⏳ Timer</button> -->
+    
+<!-- <button onclick="alert('CLICK WORKING')" id="alarmBtn" class="menuBtn">
+    ⏰ Alarm -->
+<!-- </button> -->
+
+
+
+        <div>
+
+
+   
+
+
+    <div id="alarmSection" style="display: none;">
+      <h2>⏰ Set Alarm</h2>
+      <input type="time" id="alarmTime">
+      <button onclick="setAlarm()">Set Alarm</button>
+    </div>
+
+    <div id="timerSection" style="display: none;">
+      <h2>⏳ Set Timer</h2>
+      <input type="number" id="timerMinutes" placeholder="Minutes">
+      <button onclick="startTimer()">Start Timer</button>
+    </div>
+</div>  
+<script src="/js/script.js"></script>
+</body>
+</html>
